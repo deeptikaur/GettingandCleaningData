@@ -70,15 +70,3 @@ Variables in the final tidydata dataframe
 [67] "FrequencyBodyGyroscopeJerkMagnitudemean"    "FrequencyBodyGyroscopeJerkMagnitudestd"   
 ------
 
-Steps
-
-1.Merged data from the two sets - test and train. Began by merging subjects data for both sets (subjects_train and subject_test), then activity data (y_train and y_test)for both sets followed by observations (x_train and x_test) data. 
-2.Supplied variable names from the features.txt file to the observations column after merge. Also changed the column names for subjects and activity data frames to subject id and activity respectively.
-3.Finally merged all the three resulting dataframes to create mergeddata dataframe.
-4.Created a subset of the mergeddata dataframe called meanstddt pulling the columns subject id , activity and all that give mean and standard deviation of the measurements.
-5.Merged the meanstddt and act_label dataframe based on the common data  (activity in meanstddt and V1 in act_label) to create meanstdactdt dataframe followed by deleting the activity column and renaming the column with activity names (V2) to actitivty and making it the second column of the meanstdactdt dataframe.
-6.Replaced abbreviated column names by descriptive long and clean names.
-7.Created tidydata dataframe that has  average of each variable in meanstdact for each activity and each subject.
-
-------
-
