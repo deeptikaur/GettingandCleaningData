@@ -50,4 +50,4 @@ names(meanstdactdt) <- gsub("\\(\\)", "", names(meanstdactdt))
 ###5.Creating a second, independent tidy data set with the average of each variable for each activity and each subject.
 tidydata <- aggregate(. ~subjectid + activity, meanstdactdt, mean)
 tidydata <- tidydata[order(tidydata$subjectid,tidydata$activity),]
-write.csv(tidydata,"tidydata.csv")
+write.table(tidydata,"tidydata.txt", row.name=FALSE)
