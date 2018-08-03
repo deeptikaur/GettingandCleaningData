@@ -13,6 +13,7 @@ download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 unzip(temp)
 
 unlink(temp)
+
 -----
 
 Variables Used in manipuation of data
@@ -52,42 +53,147 @@ meanstdactdt contains data from meanstddt with activity names populated accordin
 
 tidydata the final dataset that has values based on  average of each variable in meanstdact for each activity and each subject.
 
-
+-------
 
 Variables in the final tidydata dataframe
 
- [1] "subjectid"                                  "activity"                                  
- [3] "TimeBodyAccelerationmeanX"                  "TimeBodyAccelerationmeanY"                 
- [5] "TimeBodyAccelerationmeanZ"                  "TimeBodyAccelerationstdX"                  
- [7] "TimeBodyAccelerationstdY"                   "TimeBodyAccelerationstdZ"                  
- [9] "TimeGravityAccelerationmeanX"               "TimeGravityAccelerationmeanY"              
-[11] "TimeGravityAccelerationmeanZ"               "TimeGravityAccelerationstdX"               
-[13] "TimeGravityAccelerationstdY"                "TimeGravityAccelerationstdZ"               
-[15] "TimeBodyAccelerationJerkmeanX"              "TimeBodyAccelerationJerkmeanY"             
-[17] "TimeBodyAccelerationJerkmeanZ"              "TimeBodyAccelerationJerkstdX"              
-[19] "TimeBodyAccelerationJerkstdY"               "TimeBodyAccelerationJerkstdZ"              
-[21] "TimeBodyGyroscopemeanX"                     "TimeBodyGyroscopemeanY"                    
-[23] "TimeBodyGyroscopemeanZ"                     "TimeBodyGyroscopestdX"                     
-[25] "TimeBodyGyroscopestdY"                      "TimeBodyGyroscopestdZ"                     
-[27] "TimeBodyGyroscopeJerkmeanX"                 "TimeBodyGyroscopeJerkmeanY"                
-[29] "TimeBodyGyroscopeJerkmeanZ"                 "TimeBodyGyroscopeJerkstdX"                 
-[31] "TimeBodyGyroscopeJerkstdY"                  "TimeBodyGyroscopeJerkstdZ"                 
-[33] "TimeBodyAccelerationMagnitudemean"          "TimeBodyAccelerationMagnitudestd"          
-[35] "TimeGravityAccelerationMagnitudemean"       "TimeGravityAccelerationMagnitudestd"       
-[37] "TimeBodyAccelerationJerkMagnitudemean"      "TimeBodyAccelerationJerkMagnitudestd"      
-[39] "TimeBodyGyroscopeMagnitudemean"             "TimeBodyGyroscopeMagnitudestd"             
-[41] "TimeBodyGyroscopeJerkMagnitudemean"         "TimeBodyGyroscopeJerkMagnitudestd"         
-[43] "FrequencyBodyAccelerationmeanX"             "FrequencyBodyAccelerationmeanY"            
-[45] "FrequencyBodyAccelerationmeanZ"             "FrequencyBodyAccelerationstdX"             
-[47] "FrequencyBodyAccelerationstdY"              "FrequencyBodyAccelerationstdZ"             
-[49] "FrequencyBodyAccelerationJerkmeanX"         "FrequencyBodyAccelerationJerkmeanY"        
-[51] "FrequencyBodyAccelerationJerkmeanZ"         "FrequencyBodyAccelerationJerkstdX"         
-[53] "FrequencyBodyAccelerationJerkstdY"          "FrequencyBodyAccelerationJerkstdZ"         
-[55] "FrequencyBodyGyroscopemeanX"                "FrequencyBodyGyroscopemeanY"               
-[57] "FrequencyBodyGyroscopemeanZ"                "FrequencyBodyGyroscopestdX"                
-[59] "FrequencyBodyGyroscopestdY"                 "FrequencyBodyGyroscopestdZ"                
-[61] "FrequencyBodyAccelerationMagnitudemean"     "FrequencyBodyAccelerationMagnitudestd"     
-[63] "FrequencyBodyAccelerationJerkMagnitudemean" "FrequencyBodyAccelerationJerkMagnitudestd" 
-[65] "FrequencyBodyGyroscopeMagnitudemean"        "FrequencyBodyGyroscopeMagnitudestd"        
-[67] "FrequencyBodyGyroscopeJerkMagnitudemean"    "FrequencyBodyGyroscopeJerkMagnitudestd"   
+"subjectid"                                  
+
+"activity"                                  
+
+"TimeBodyAccelerationmeanX"                  
+
+"TimeBodyAccelerationmeanY"                 
+
+"TimeBodyAccelerationmeanZ"                  
+
+"TimeBodyAccelerationstdX"                  
+
+"TimeBodyAccelerationstdY"                   
+
+"TimeBodyAccelerationstdZ"                  
+
+"TimeGravityAccelerationmeanX"               
+
+"TimeGravityAccelerationmeanY"              
+
+"TimeGravityAccelerationmeanZ"              
+
+"TimeGravityAccelerationstdX"               
+
+"TimeGravityAccelerationstdY"                
+
+"TimeGravityAccelerationstdZ"               
+
+"TimeBodyAccelerationJerkmeanX"              
+
+"TimeBodyAccelerationJerkmeanY"             
+
+"TimeBodyAccelerationJerkmeanZ"              
+
+"TimeBodyAccelerationJerkstdX"              
+
+"TimeBodyAccelerationJerkstdY"              
+
+"TimeBodyAccelerationJerkstdZ"              
+
+"TimeBodyGyroscopemeanX"                    
+
+"TimeBodyGyroscopemeanY"                    
+
+"TimeBodyGyroscopemeanZ"                     
+
+"TimeBodyGyroscopestdX"                     
+
+"TimeBodyGyroscopestdY"                      
+
+"TimeBodyGyroscopestdZ"                     
+
+"TimeBodyGyroscopeJerkmeanX"                
+
+"TimeBodyGyroscopeJerkmeanY"                
+
+"TimeBodyGyroscopeJerkmeanZ"                
+
+"TimeBodyGyroscopeJerkstdX"                 
+
+"TimeBodyGyroscopeJerkstdY"                 
+
+"TimeBodyGyroscopeJerkstdZ"                 
+
+"TimeBodyAccelerationMagnitudemean"          
+
+"TimeBodyAccelerationMagnitudestd"          
+
+"TimeGravityAccelerationMagnitudemean"       
+
+"TimeGravityAccelerationMagnitudestd"       
+
+"TimeBodyAccelerationJerkMagnitudemean"      
+
+"TimeBodyAccelerationJerkMagnitudestd"      
+
+"TimeBodyGyroscopeMagnitudemean"             
+
+"TimeBodyGyroscopeMagnitudestd"             
+
+"TimeBodyGyroscopeJerkMagnitudemean"         
+
+"TimeBodyGyroscopeJerkMagnitudestd"         
+
+"FrequencyBodyAccelerationmeanX"             
+
+"FrequencyBodyAccelerationmeanY"            
+
+"FrequencyBodyAccelerationmeanZ"             
+
+"FrequencyBodyAccelerationstdX"             
+
+"FrequencyBodyAccelerationstdY"              
+
+"FrequencyBodyAccelerationstdZ"             
+
+"FrequencyBodyAccelerationJerkmeanX"         
+
+"FrequencyBodyAccelerationJerkmeanY"        
+
+"FrequencyBodyAccelerationJerkmeanZ"         
+
+"FrequencyBodyAccelerationJerkstdX"         
+
+"FrequencyBodyAccelerationJerkstdY"          
+
+"FrequencyBodyAccelerationJerkstdZ"         
+
+"FrequencyBodyGyroscopemeanX"                
+
+"FrequencyBodyGyroscopemeanY"               
+
+"FrequencyBodyGyroscopemeanZ"               
+
+"FrequencyBodyGyroscopestdX"                
+
+"FrequencyBodyGyroscopestdY"                 
+
+"FrequencyBodyGyroscopestdZ"                
+
+"FrequencyBodyAccelerationMagnitudemean"     
+
+"FrequencyBodyAccelerationMagnitudestd"     
+
+"FrequencyBodyAccelerationJerkMagnitudemean" 
+
+"FrequencyBodyAccelerationJerkMagnitudestd" 
+
+"FrequencyBodyGyroscopeMagnitudemean"       
+
+"FrequencyBodyGyroscopeMagnitudestd"        
+
+"FrequencyBodyGyroscopeJerkMagnitudemean"    
+
+"FrequencyBodyGyroscopeJerkMagnitudestd"   
+
+
 ------
+
+
