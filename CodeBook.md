@@ -69,4 +69,3 @@ Variables in the final tidydata dataframe
 [65] "FrequencyBodyGyroscopeMagnitudemean"        "FrequencyBodyGyroscopeMagnitudestd"        
 [67] "FrequencyBodyGyroscopeJerkMagnitudemean"    "FrequencyBodyGyroscopeJerkMagnitudestd"   
 ------
-

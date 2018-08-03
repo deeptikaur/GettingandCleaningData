@@ -22,6 +22,5 @@ How the script worked
 
 ------
 
-
 The tidy_data.txt in this repository was created by running the run_analysis.R script using R version 3.4.2 (2017-09-28) on Windows 10 64-bit editionscript that was used to create the data set tidydata as per the requirements in the assignment.
 
